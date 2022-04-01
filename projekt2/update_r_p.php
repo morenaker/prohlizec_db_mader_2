@@ -13,7 +13,7 @@ if (isset($_SESSION['User'])) {
         $phone = $_POST['phone'];
         $roomid = $_POST['roomid'];
         if (empty($name) || empty($no) || empty($phone)) {
-            header("Location: update_r.php?id=$roomid?=Vyplneni je potrebne");
+            header("Location: update_r.php?id=$roomid");
             exit();
         }else {
 
@@ -23,7 +23,7 @@ if (isset($_SESSION['User'])) {
 
         }
     }else  {
-        header("Location: hesloform.php");
+        header("Location: lidi.php");
         exit();
     }
 
