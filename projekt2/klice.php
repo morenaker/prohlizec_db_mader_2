@@ -57,11 +57,13 @@ else
         for ($i=0;$i<=$length;$i++){
             if($row->room_id==$maklice[$i]){
                 $kontrola++;
-                echo"<a>$row->name</a><input type='checkbox' value='$row->room_id' name='klic[]' checked ><br>";
+                echo"<input type='checkbox' id='$row->room_id' value='$row->room_id' name='klic[]' checked >
+                <label for='$row->room_id'>$row->name</label><br>";
             }
         }
         if($kontrola==0){
-            echo"<a>$row->name</a><input type='checkbox' value='$row->room_id' name='klic[]' ><br>";
+            echo"<input id='$row->room_id' type='checkbox' value='$row->room_id' name='klic[]' >
+            <label for='$row->room_id' >$row->name</label><br>";
         }
         else{
             $kontrola=0;
