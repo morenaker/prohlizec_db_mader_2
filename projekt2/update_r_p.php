@@ -23,7 +23,7 @@ if (isset($_SESSION['User'])) {
 
         }
     }else  {
-        header("Location: lidi.php");
+        header("Location: room.php");
         exit();
     }
 
