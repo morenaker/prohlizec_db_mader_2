@@ -15,7 +15,7 @@ if (isset($_SESSION['User'])) {
         $empid = $_POST['empid'];
         $room=$_POST['room'];
         if (empty($name) || empty($surname) || empty($job) || empty($wage)|| $room==0) {
-            header("Location: update_e.php?id=$empid?=Vyplneni je potrebne");
+            header("Location: update_e.php?id=$empid");
             exit();
         }else {
             $stmt = $pdo->query("UPDATE employee SET name='$name',surname='$surname',job='$job',wage='$wage', room='$room' WHERE employee_id='$empid'");
