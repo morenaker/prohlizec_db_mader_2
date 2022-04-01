@@ -25,7 +25,7 @@ if (isset($_SESSION['User'])) {
 
         }
     }else  {
-        header("Location: hesloform.php");
+        header("Location:lidi.php");
         exit();
     }
 
